@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="./main.css">
+<script type="module" src="/uskay-profile.js"></script>
+<div class="main">
+  <div class="header">  
+    <h1>Container Query Demo</h1>
+    <h2>
+      What if your profile was a fully responsive web component...?
+    </h2>
+    <div class="control-panel-container">
+      <div class="control-panel">
+        <div>Light theme</div>
+        <div class="toggle">    
+          <div class="switch"></div>
+        </div>  
+        <div>Dark theme</div>
+      </div>
+    </div>
+    <div class="note">
+      Note: this toggle will run JavaScript to add CSS variables `--theme: dark|light` to the body, which the Style Query responds to.
+    </div>
+  </div>
+  <div class="my-grid">
+    <!-- large -->
+    <div class="large">
+      <uskay-profile></uskay-profile>
+    </div>
+    <!-- mid -->
+    <div class="mid">
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+    </div>
+    <!-- small -->
+    <div class="small">
+      <uskay-profile></uskay-profile>
+    </div>
+    <!-- tiny -->
+    <div class="tiny">
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+      <uskay-profile></uskay-profile>
+    </div>
+  </div>
+</div>
+<script src="./main.js"></script>

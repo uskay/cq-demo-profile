@@ -1,0 +1,22 @@
+{
+  "name": "cq-demo-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uskay/cq-demo-profile.git"
+  },
+  "author": "Yusuke Utsunomiya",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/uskay/cq-demo-profile/issues"
+  },
+  "homepage": "https://github.com/uskay/cq-demo-profile#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
