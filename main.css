@@ -1,6 +1,7 @@
 :root {
   --material-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 html,
 body {
   width: 100%;
@@ -17,6 +18,16 @@ body {
 
 .main {
   width: 90%;
+}
+
+@media only screen and (max-width: 800px) {
+  .my-grid {
+    display: none !important;
+  }
+
+  .my-grid-mobile {
+    display: grid !important;
+  }
 }
 
 .my-grid {
@@ -49,6 +60,34 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: var(--grid-gap);
+  }
+}
+
+.my-grid-mobile {
+  display: none;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+
+  .large {
+    width: 100%;
+  }
+
+  .mid {
+    display: grid;
+    grid-template-columns: 301px 1fr;
+    grid-gap: 10px;
+  }
+
+  .small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .tiny {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
   }
 }
 

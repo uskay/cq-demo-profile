@@ -34,7 +34,7 @@ export class MyProfile extends HTMLElement {
           }
         }
       }
-      @container (500px < inline-size) and (inline-size < 650px) {
+      @container (500px < width) and (width <= 650px) {
         .my-profile {
           grid-template-columns: var(--profile-pic-small-w) 1fr;
           .my-photo {
@@ -58,7 +58,39 @@ export class MyProfile extends HTMLElement {
           }
         } 
       }
-      @container (300px < inline-size) and (inline-size < 500px) {
+      @container (350px < width) and (width <= 500px) {
+        .my-profile {
+          grid-template-columns: var(--profile-pic-small-w) 1fr;
+          .my-photo {
+            width: var(--profile-pic-small-w);
+            height: var(--profile-pic-small-w);
+          }
+          .my-name {
+            font-size: 0.5em;
+            .ja {
+              display: none;  
+            }        
+          }
+          .my-title {
+            font-size: 1.0em;
+            .title {
+              display: none;
+            }
+          }
+          .my-social {
+            .id {
+              display: none;
+            }
+          }
+          .my-description {
+            font-size: 1.0em;
+            .rest {
+              display: none;
+            }
+          }
+        } 
+      }
+      @container (300px < width) and (width <= 350px) {
         .my-profile {
           grid-template-columns: 1fr;
           place-items: center;
@@ -100,7 +132,7 @@ export class MyProfile extends HTMLElement {
           }
         }   
       }
-      @container (125px < inline-size) and (inline-size < 300px) {
+      @container (125px < width) and (width <= 300px) {
         .my-profile {
           grid-template-columns: 1fr;
           place-items: center;
@@ -141,7 +173,7 @@ export class MyProfile extends HTMLElement {
           }
         }   
       }
-      @container (inline-size < 125px) {
+      @container (width <= 125px) {
         .my-profile {
           grid-template-columns: 1fr;
           place-items: center;
